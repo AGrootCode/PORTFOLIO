@@ -5,9 +5,9 @@
   Helvetica, Arial, sans-serif;
   box-sizing: border-box;
 }
-html{
+/* html{
   scroll-behavior: smooth;
-}
+} */
 /* HEADER */
 header {
   height: 80px;
