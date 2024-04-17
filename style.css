@@ -12,18 +12,19 @@
 
 /* HEADER */
 header {
-  height: 80px;
+  /* position: fixed; */
+  height: 4.5rem;
   background-color: #e5e5e5;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 0.3px solid rgb(73, 70, 70);
+  padding: 0 4%;
 }
 
 /* Desktop logo */
 .logo-container {
-  min-width: 30%;
-  margin-left: 6%;
+  /* min-width: 30%; */
 }
 .portfolio-logo {
   color: #a35cc4;
@@ -39,18 +40,16 @@ header {
 
 /* NAV BAR */
 .nav-bar-container {
-  display: flex;
-}
-nav {
-  margin-right: 5%;
+  /* display: flex; */
+  flex-wrap: wrap;
 }
 .nav-bar-container a {
   text-decoration: none;
   color: #1f1f2d;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   position: relative;
-  margin: 10px 20px;
+  margin: 0.8rem 0.8rem;
 }
 .nav-bar-container a::after {
   content: "";
@@ -68,40 +67,74 @@ nav {
 .nav-bar-container .nav-last-item{
   color: #ed861f;
 }
+/* -----------------LABEL-ICON------------------ */
+.label-icon{
+  position: absolute;  
+  right: 0;
+  font-size: 1.5rem;
+  color: #1f1f2d;
+  cursor: pointer; 
+  display: none;
+}
 
-/* MAIN 1 */
+/* -----------------BREAKPOINTS------------------ */
+@media only screen and (max-width: 900px) {
+  .header{
+    height: 4rem;
+    /* padding: 0 3%; */
+  }
+}
+
+  @media only screen and (max-width: 748px) {
+    .label-icon{
+      /* display: block; */
+      display: inline-flex;
+    }
+    .nav-bar-container{
+      position: absolute;
+      top: 10%;
+      left: 0;
+      width: 100%;
+      height: 10rem;
+      background-color: red;
+    }
+    .nav-bar-container a{
+      display: block;
+      font-size: 0.7rem;
+      
+    }
+  }
+/* -----------------MAIN 1------------------ */
 .row1-container {
   background-color: #e5e5e5;
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-evenly;
+  justify-content:space-around;
   align-items: center;
   padding: 80px 0px 40px;
 }
-.row1-image-container {
-  max-width: 40%;
-  /* display: flex; */
-  /* justify-content: space-around; */
-}
+/* .row1-image-container {
+ max-width: 40%; 
+   display: flex; 
+   justify-content: space-around; 
+}  */
+
 .row1-image{
-  width: 400px;
-  height: 400px;
-}
-.row1-intro-container{
-  min-width: 55%;
+  width: 325px;
+  height: 325px;
 }
 .row1-intro-line-3{
   font-size: 1rem;
   font-weight: 340;
 }
 
-/* MAIN 2 */
+/* ----------------MAIN 2------------- */
 .row2-container{
   background-color: #e5e5e5;
   display: flex;
   flex-wrap: wrap;
   padding: 40px 0 60px;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 .row2-image-container{
