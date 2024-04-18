@@ -15,16 +15,26 @@
             <div class="portfolio-logo">ANSHUL</div>
             <span class="portfolio-role">Web Developer</span>
         </div> 
-        <label for="" class="label-icon">
+        <!-- <label for="" class="label-icon">
           <i class="fa-solid fa-bars"></i>
-        </label>
+        </label> -->
         <nav class="nav-bar-container">
-            <a href="index.html">HOME</a>
-            <a href="about.html">ABOUT</a>
-            <a href="projects.html">PROJECTS</a>
-            <a class="resume-download" href="images/Anshul_Resume.pdf" download>RESUME</a>
-            <a onclick="scrollToChat('lets-chat')" class="nav-last-item" href="#">LET'S CHAT</a>
+          <a href="index.html" class="sidebar-hide">HOME</a>
+          <a href="about.html" class="sidebar-hide">ABOUT</a>
+          <a href="projects.html" class="sidebar-hide">PROJECTS</a>
+          <a class="resume-download sidebar-hide" href="images/Anshul_Resume.pdf" download>RESUME</a>
+          <a onclick="scrollToChat('lets-chat')" class="nav-last-item sidebar-hide" href="#">LET'S CHAT</a>
+          <i onclick="showSidebar()" class="fa-solid fa-bars"></i>
         </nav>
+        <!-- SIDEBAR -->
+        <nav class="nav-bar-container sidebar-container">
+          <i onclick="hideSidebar()" class="fa-solid fa-x"></i>
+          <a href="index.html" >HOME</a>
+          <a href="about.html" >ABOUT</a>
+          <a href="projects.html" >PROJECTS</a>
+          <a class="resume-download" href="images/Anshul_Resume.pdf" download>RESUME</a>
+          <a onclick="scrollToChat('lets-chat')" class="nav-last-item" href="#">LET'S CHAT</a>
+      </nav>
     </header>
       <!-- MAIN section -->
       <main>

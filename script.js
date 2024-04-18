@@ -10,3 +10,15 @@ document.querySelector(".resume-download").addEventListener("click", function(){
     if(result === false)
         event.preventDefault();
 });
+
+// show sidebar
+function showSidebar(){
+let sidebar =  document.querySelector('.sidebar-container');
+sidebar.style.display = 'flex';
+}
+
+// hide sidebar
+function hideSidebar(){
+  let sidebar = document.querySelector('.sidebar-container');
+  sidebar.style.display = 'none';
+}
