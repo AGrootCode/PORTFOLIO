@@ -1,4 +1,4 @@
-/*---------------------------GLOBAL-----------------------*/
+/*-----------------------------------GLOBAL------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,8 @@
 body{
   background-color: #e5e5e5;
 }
-/*---------------------------HEADER-----------------------*/
+
+/*-----------------------------------HEADER------------------------------*/
 header {
   height: 4.5rem;
   background-color: #e5e5e5;
@@ -22,8 +23,7 @@ header {
   border-bottom: 0.3px solid rgb(73, 70, 70);
   padding: 0 4%;
 }
-
-/*--------------------------- DESKTOP LOGO -----------------------*/
+/*-----------------------------------DESKTOP LOGO------------------------------*/
 .portfolio-logo {
   color: #8d34a9;
   font-weight: 700;
@@ -35,31 +35,8 @@ header {
   font-weight: 100;
   font-size: 0.8rem;
 }
-/* ---------------------------SIDEBAR---------------------- */
-.sidebar-container{
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 45%;
-  z-index: 999;
-  background-color: #e5e5e5;
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  box-shadow: -10px 0px 10px rgba(0, 0, 0, .1);
-  backdrop-filter: blur(10px);
-}
-.sidebar-container a{
-  width: 100%;
-}
-.nav-bar-container .menu-icon{
-  display: none;
-  font-size: 1.5rem;
-}
 
-/*--------------------------- NAVBAR -----------------------*/
+/*-----------------------------------NAVBAR------------------------------*/
 .nav-bar-container {
   flex-wrap: wrap;
 }
@@ -88,69 +65,31 @@ header {
   color: #ed861f;
 }
 
-/*-------------------------------MEDIA QUERY------------------------------------*/
-@media only screen and (max-width : 929px) {
-  .nav-bar-container .menu-icon{
-    display: block;
-  }
-  .sidebar-hide{
-    display: none;
-  }
-  .row1-intro-container{
-    margin-bottom: 3rem;
-  }
-  .footer-media{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+/*-----------------------------------SIDEBAR------------------------------*/
+.sidebar-container{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 45%;
+  z-index: 999;
+  background-color: #e5e5e5;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-shadow: -10px 0px 10px rgba(0, 0, 0, .1);
+  backdrop-filter: blur(10px);
 }
-@media only screen and (max-width : 600px){
-  /* ROW 1 */
-  .row1-intro-container{
-    margin-bottom: 2.5rem;
-  }
-  .row1-image-container  .row1-image{
-    width: 250px;
-    height: 250px;
-  }
-
-  /* ROW 2 */
- .row2-intro-brief{
-    min-width: 100%;
-    margin-bottom: 2.5rem;
-  }
-  .row2-intro-brief h1{
-    font-size: 1.5rem;
-  }
-  .row2-intro-brief .row2-intro-media{
-    font-size: 1.1rem;
-  }
-
-  /* PROJECT */
-  .box-container{
-    min-width: 80%;
-  }
-  .box-container.first{
-    margin-bottom: 5rem;
-  }
-  .about-container{
-    flex-direction: column;
-    min-width: 100%;
-  }
-  .about-image-container{
-    min-width: 60%;
-    margin-bottom: 2.3rem;
-  }
-  .about-intro-container{
-    min-width: 85%;
-  }
-  .about-intro-container .about-intro-media{
-    font-size: 0.9rem;
-    letter-spacing: 0px;
-  }
+.sidebar-container a{
+  width: 100%;
 }
-/* -----------------ROW 1------------------ */
+.nav-bar-container .menu-icon{
+  display: none;
+  font-size: 1.5rem;
+}
+
+/*-----------------------------------ROW 1------------------------------*/
 .row1-container {
   background-color: #e5e5e5;
   display: flex;
@@ -168,7 +107,7 @@ header {
   font-weight: 340;
 }
 
-/* ----------------ROW 2------------- */
+/*-----------------------------------ROW 2------------------------------*/
 .row2-container{
   background-color: #e5e5e5;
   display: flex;
@@ -191,8 +130,7 @@ header {
   text-align: justify;
 }
 
-/* ---------------------------------------PROJECTS------------------------------------ */
-
+/*-----------------------------------PROJECTS------------------------------*/
 .project-header{
   background-color: #e5e5e5;
   padding: 3rem 0;
@@ -210,7 +148,7 @@ header {
 }
 .box-container{
   height: 550px;
-  max-width: 27%;
+  max-width: 30%;
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0px 0px 20px 10px #888888;
@@ -221,12 +159,13 @@ header {
   transition: 0.2s;
 }
 .project-image-container{
-  background-size: 410px 250px;
+  /* background-size: 410px 250px; */
+  background-size: 100% 100%;
+  /* background-size: cover; */
   background-repeat: no-repeat;
   height: 270px;
   border-radius: 8px;
 }
-
 .box-container h3{
   text-align: center;
   line-height: 2;
@@ -249,15 +188,14 @@ header {
   border-radius: 4px;
 }
 
-/* ---------------------------------------ABOUT------------------------------------ */
-
+/*-----------------------------------ABOUT------------------------------*/
 .about-container{
-background-color: #e5e5e5;
- display: flex;
- justify-content: space-around;
- flex-wrap: wrap;
- align-items: center;
- padding: 2rem 0 1rem;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2rem 0 1rem;
 }
 .about-image-container{
   max-width: 25%;
@@ -281,7 +219,7 @@ background-color: #e5e5e5;
 }
 .about-container-2{
   background-color: #e5e5e5;
-  padding: 40px 0 0;
+  padding: 2.4rem 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -291,27 +229,27 @@ background-color: #e5e5e5;
 }
 .about-container-2 ul{
   display: flex; 
-  justify-content: space-between;
+  justify-content: space-around;
+  /* align-items: center; */
   flex-wrap: wrap;
 }
 .about-container-2 ul li i{
-  font-size:3rem;  
+  font-size:2.5rem;  
   transition: transform 0.3s ease-out;
 }
 .about-container-2 ul li i:hover{
   transform: scale(1.2);
 }
-
 .about-container-2 ul li{
   list-style: none;
-  padding: 35px 55px;
-  margin: 40px 20px;
+  padding: 2.1rem 3.3rem;
+  margin: 2.4rem 1.3rem;
   border: 3px solid #8d34a9;
   border-radius: 10px ;
   text-shadow: 0px 0px 10px 10px #888888;
 }
 
-/* ---------------------------------------CONTACT------------------------------------ */
+/*-----------------------------------CONTACT------------------------------*/
 .contact-container{
   background-color: #e5e5e5;
   display: flex;
@@ -342,7 +280,7 @@ background-color: #e5e5e5;
   color: #8d34a9;
 }
 
-/* ---------------------------------------FOOTER CSS------------------------------------ */
+/*-----------------------------------FOOTER------------------------------*/
 footer{
   padding: 0.7rem;
   background-color: #e5e5e5;
@@ -354,4 +292,79 @@ footer{
 .footer-contact-container a{
   padding: 0 0.4rem;
   font-size: 1.5rem;
+}
+
+/*-----------------------------------MEDIA QUERY------------------------------*/
+@media only screen and (max-width : 600px){
+  /* ROW 1 */
+  .row1-intro-container{
+    margin-bottom: 2.5rem;
+  }
+  .row1-image-container  .row1-image{
+    width: 250px;
+    height: 250px;
+  }
+  
+  /* ROW 2 */
+  .row2-intro-brief{
+    min-width: 100%;
+    margin-bottom: 2.5rem;
+  }
+  .row2-intro-brief h1{
+    font-size: 1.5rem;
+  }
+  .row2-intro-brief .row2-intro-media{
+    font-size: 1.1rem;
+  }
+  
+  /* PROJECT */
+  .box-container{
+    min-width: 80%;
+  }
+  .box-container.first{
+    margin-bottom: 5rem;
+  }
+  .project-image-container{
+    background-size: 100% 100%;
+  }
+  
+  /* About */
+  .about-container{
+    flex-direction: column;
+    min-width: 100%;
+  }
+  .about-image-container{
+    min-width: 60%;
+    margin-bottom: 2.3rem;
+  }
+  .about-intro-container{
+    min-width: 85%;
+  }
+  .about-intro-container .about-intro-media{
+    font-size: 0.9rem;
+    letter-spacing: 0px;
+  }
+  .about-container-2 ul li i{
+    font-size:2rem;
+  }
+  .about-container-2 .skillset-media{
+    margin: 1.5rem 1.3rem;
+  }
+}
+
+@media only screen and (max-width : 929px) {
+  .nav-bar-container .menu-icon{
+    display: block;
+  }
+  .sidebar-hide{
+    display: none;
+  }
+  .row1-intro-container{
+    margin-bottom: 3rem;
+  }
+  .footer-media{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
