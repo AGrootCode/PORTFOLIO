@@ -1,81 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anshul | Portfolio</title>
-    <link rel="icon" href="images/favicon.webp">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-  <body>
-    <!-- HEADER -->
-    <header>
-      <div class="logo-container">
-          <div class="portfolio-logo">ANSHUL</div>
-          <span class="portfolio-role">Web Developer</span>
-      </div> 
-      <nav class="nav-bar-container">
-        <a href="index.html" class="sidebar-hide">HOME</a>
-        <a href="about.html" class="sidebar-hide">ABOUT</a>
-        <a href="projects.html" class="sidebar-hide">PROJECTS</a>
-        <a class="resume-download sidebar-hide" href="images/Anshul_Resume.pdf" download>RESUME</a>
-        <a onclick="scrollToChat('lets-chat')" class="nav-last-item sidebar-hide" href="#">LET'S CHAT</a>
-        <a href="#"><i onclick="showSidebar()" class="menu-icon fa-solid fa-bars"></i></a>
-      </nav>
-      <!-- SIDEBAR -->
-      <nav class="nav-bar-container sidebar-container">
-        <a href="#"><i onclick="hideSidebar()" class="menu-icon fa-solid fa-x"></i></a>
-        <a href="index.html" >HOME</a>
-        <a href="about.html" >ABOUT</a>
-        <a href="projects.html" >PROJECTS</a>
-        <a class="resume-download" href="images/Anshul-Resume.pdf" download>RESUME</a>
-        <a onclick="scrollToChat('lets-chat')" class="nav-last-item" href="#">LET'S CHAT</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anshul | Portfolio</title>
+  <link rel="icon" href="images/favicon.webp">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo-container">
+      <div onclick="navigateToHome()" class="portfolio-logo">ANSHUL</div>
+      <span class="portfolio-role">Web Developer</span>
+    </div>
+    <nav class="nav-bar-container">
+      <a href="index.html" class="sidebar-hide">HOME</a>
+      <a href="about.html" class="sidebar-hide">ABOUT</a>
+      <a href="projects.html" class="sidebar-hide">PROJECTS</a>
+      <a class="resume-download sidebar-hide" href="images/Anshul_Resume.pdf" download>RESUME</a>
+      <a onclick="scrollToChat('lets-chat')" class="nav-last-item sidebar-hide" href="#">LET'S CHAT</a>
+      <a href="#"><i onclick="showSidebar()" class="menu-icon fa-solid fa-bars"></i></a>
+    </nav>
+    <!-- SIDEBAR -->
+    <nav class="nav-bar-container sidebar-container">
+      <a href="#"><i onclick="hideSidebar()" class="menu-icon fa-solid fa-x"></i></a>
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="projects.html">PROJECTS</a>
+      <a class="resume-download" href="images/Anshul-Resume.pdf" download>RESUME</a>
+      <a onclick="scrollToChat('lets-chat')" class="nav-last-item" href="#">LET'S CHAT</a>
     </nav>
   </header>
-      <!-- MAIN section -->
-      <div class="project-header">
-        <h1>Projects I've <span class="word-highlight">Worked</span> on</h1>
-        <h4>Here are the few projects</h4>
+
+  <!-- MAIN section -->
+  <div class="project-header">
+    <h1>Projects I've <span class="word-highlight">Worked</span> on</h1>
+    <!-- <h4>Here are the few projects</h4> -->
+  </div>
+  <div class="project-container project-container-media">
+    <div class="box-container first common">
+      <img class="project-image-container" src="images/spotify.png" alt="Spotify Interface">
+      <h3>SPOTIFY</h3>
+      <p>Spotify, built using React, leverages a component-based architecture for a seamless user experience. Tailwind
+        CSS ensures efficient and responsive design styling, while Redux handles state management for consistent and
+        predictable application state. React Router provides smooth navigation for a user-friendly music streaming
+        experience.</p>
+      <div class="project-github-buttons">
+        <button onclick="spotifyGithub()" class="project-button">Github</button>
+        <button class="project-button">Try Me</button>
+      </div>
     </div>
-    <div class="project-container project-container-media">
-        <div class="box-container first">
-            <div class="project-image-container" style="background-image: url('images/project1.webp');"></div>
-            <!-- <div class="project-image-container"><img class="project1-image" src="images/project11.jpg" alt="banner-image"> </div> -->
-            <h3>PIG GAME</h3>
-            <p>It's an eye-catching UI-based Pig game, designed to chill with friends, built with JavaScript. It features options like ntuitive controls, engaging visuals, and interactive gameplay mechanics, providing a seamless and enjoyable user experience.</p>
-            <!-- <div  class="github-button"><button type="button">GitHub</button></div> -->
-        </div>
-        <div class="box-container first">
-            <div class="project-image-container" style="background-image: url('images/project2.webp');"></div>
-            <h3>PASSWORD GENERATOR</h3>
-            <p>It is a user-friendly UI interactive password generator built with React and Tailwind that allows users to generate passwords based on their preferences, including numbers or special characters.</p>
-            <!-- <div  class="github-button"><button type="button">GitHub</button></div> -->
-        </div>
-        <div class="box-container">
-            <div class="project-image-container" style="background-image: url('images/project3.webp');"></div>
-            <h3>BANKIST APPLICATION</h3>
-            <p>The Bankist application is built with JavaScript and Bootstrap. It takes the content from array objects and renders it using JavaScript, and offers many other operations you can perform with accounts.</p>
-            <!-- <div  class="github-button"><button type="button">GitHub</button></div> -->
-        </div>
+
+    <div class="box-container second common">
+      <img class="project-image-container" src="images/chat.png" alt="Spotify Interface">
+      <h3>REAL-TIME CHAT</h3>
+      <p>It provides a seamless, interactive platform for real-time messaging with a modern, intuitive user interface,
+        allowing users to chat effortlessly across devices. The tech stack includes React for the front end, Firebase
+        for
+        backend services, and Zustand for state management.</p>
+      <div class="project-github-buttons">
+        <button onclick="reactChatGithub()" class="project-button">Github</button>
+        <button class="project-button">Try Me</button>
+      </div>
     </div>
-       <!-- CONTACT  -->
-        <div class="contact-container" id="lets-chat">
-          <h1 class="word-highlight">FIND ME ON</h1>
-          <p>Feel Free to connect with me</p>
-          <div class="contact-icon-container">
-            <a href="https://github.com/AGrootCode" target="_blank"><i class="fa-brands fa-github contact-icon"></i></a>
-            <a href="https://www.linkedin.com/in/anshul-kumar-150381217/" target="_blank"><i class="fa-brands fa-linkedin-in contact-icon"></i></i></a>
-            <a href="https://twitter.com/anshuly_68" target="_blank"><i class="fa-brands fa-x-twitter contact-icon"></i></a>
-            <a href="https://www.instagram.com/anshul__y" target="_blank"><i class="fa-brands fa-instagram contact-icon"></i></a>
-          </div>
-        </div>
-      </main>
-      <!-- FOOTER -->
-      <footer class="footer-media">
-        <div class="footer-media-1">Designed and Developed by Anshul Kumar</div>
-        <div class="footer-media-2">Copyright &#169 2024 Anshul</div>
-    </footer> 
-      <script src="script.js"></script>
-  </body> 
+
+    <div class="box-container third common">
+      <img class="project-image-container" src="images/pig.png" alt="PIG interface">
+      <h3>PIG GAME</h3>
+      <p>PIG game developed using JavaScript to provide an engaging, interactive experience with dynamic UI updates,
+        real-time score tracking, and turn-based logic. The game's objective is for players to accumulate points by
+        rolling a die, aiming to reach a target score while avoiding the risk of rolling a 1, which ends their turn with
+        no points.</p>
+      <div class="project-github-buttons">
+        <button onclick="pigGameGithub()" class="project-button">Github</button>
+        <button class="project-button">Try Me</button>
+      </div>
+    </div>
+
+    <div class="box-container fourth common">
+      <img class="project-image-container" src="images/password.png" alt="Password Generator">
+      <h3>PASSWORD GENERATOR</h3>
+      <p>The Password Generator project, built using React and styled with Tailwind CSS, provides a user-friendly
+        interface for creating secure, random passwords enabling quick and responsive UI development. Users can
+        customize password
+        length and character sets, demonstrating dynamic state management and real-time updates in a modern web
+        application.
+      </p>
+      <div class="project-github-buttons">
+        <button onclick="passwordGeneratorGithub()" class="project-button">Github</button>
+        <button class="project-button">Try Me</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CONTACT  -->
+  <div class="contact-container" id="lets-chat">
+    <h1 class="word-highlight">FIND ME ON</h1>
+    <p>Feel Free to connect with me</p>
+    <div class="contact-icon-container">
+      <a href="https://github.com/AGrootCode" target="_blank"><i class="fa-brands fa-github contact-icon"></i></a>
+      <a href="https://www.linkedin.com/in/anshul-kumar-150381217/" target="_blank"><i
+          class="fa-brands fa-linkedin-in contact-icon"></i></i></a>
+      <a href="https://twitter.com/anshuly_68" target="_blank"><i class="fa-brands fa-x-twitter contact-icon"></i></a>
+      <a href="https://www.instagram.com/anshul__y" target="_blank"><i
+          class="fa-brands fa-instagram contact-icon"></i></a>
+    </div>
+  </div>
+  </main>
+  <!-- FOOTER -->
+  <footer class="footer-media">
+    <div class="footer-media-1">Designed and Developed by Anshul Kumar</div>
+    <div class="footer-media-2">Copyright &#169 2024 Anshul</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>

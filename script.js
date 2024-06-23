@@ -22,3 +22,30 @@ function hideSidebar(){
   let sidebar = document.querySelector('.sidebar-container');
   sidebar.style.display = 'none';
 }
+
+const navigateToHome = () => {
+  window.location.href = "index.html";
+}
+
+ function spotifyGithub(){
+   // Redirect to a new page
+   window.location.href = "https://github.com/anshulkumar68/Spotify_Clone";
+}
+
+const moreProjects = () => {
+   window.location.href = "projects.html";
+}
+
+const reactChatGithub = () => {
+  window.location.href =
+    "https://github.com/anshulkumar68/React_Chat_Application";
+  } 
+  
+  const pigGameGithub = () => {
+  window.location.href = "https://github.com/anshulkumar68/PIG_Game";
+}
+
+const passwordGeneratorGithub = () => {
+  window.location.href =
+    "https://github.com/anshulkumar68/Learning_Reactjs/tree/main/Learning_React";
+}

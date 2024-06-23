@@ -12,7 +12,7 @@
     <!-- HEADER -->
     <header>
         <div class="logo-container">
-            <div class="portfolio-logo">ANSHUL</div>
+            <div onclick="navigateToHome()" class="portfolio-logo">ANSHUL</div>
             <span class="portfolio-role">Web Developer</span>
         </div> 
         <nav class="nav-bar-container">
@@ -48,9 +48,9 @@
         <!-- ROW 2 CONTAINER -->
         <div class="row2-container">
           <div class="row2-intro-brief">
-            <h1>LET ME <span class="word-highlight">INTRODUCE</span> MYSELF</h1> <br>
-            <p class="row2-intro-media"><!-- <span style="line-height: 3;">I fell in love with programming and I have at least learnt something... 🤷‍♂️</span><br> -->
-              Hi, I'm Anshul, A web developer specializing in both front-end and back-end development. With a focus on creating seamless user experiences and robust server-side applications, I thrive on turning ideas into engaging digital solutions. Let's collaborate and bring your vision to life on the web! </p>
+            <h2>LET ME <span class="word-highlight">INTRODUCE</span> MYSELF</h2> <br>
+            <p class="row2-intro-media"><span style="line-height: 3;">I fell in love with programming and I have at least learnt something... 🤷‍♂️</span><br>
+              Hi, I'm Anshul, a Frontend Developer specializing in crafting seamless user experiences. With a keen eye for design and a passion for bringing ideas to life on the web, I thrive on creating engaging and intuitive digital interfaces. I am skilled in the latest technologies and trends, ensuring that your project stands out in today's competitive landscape. Let's collaborate to turn your vision into a captivating online experience! </p>
             </div>
             <div class="row2-image-container"><img src="images/smile.webp" alt=""></div>
           </div>
@@ -60,19 +60,32 @@
             <h1>Projects I've <span class="word-highlight">Worked</span> on</h1>
             <h4>Here are the few projects</h4>
         </div>
+
         <div class="project-container">
-            <div class="box-container first">
-                <div class="project-image-container" style="background-image: url('images/project1.webp');"></div>
-                <h3>PIG GAME</h3>
-                <p>It's an eye-catching UI-based Pig game, designed to chill with friends, built with JavaScript. It features options like ntuitive controls, engaging visuals, and interactive gameplay mechanics, providing a seamless and enjoyable user experience.</p>
-                <!-- <div  class="github-button"><a href="https://github.com/anshulkumar68/PIG_Game"><button type="button">GitHub</button></a></div> -->
+      
+            <div class="box-container">
+              <img class="project-image-container" src="images/spotify.png" alt="Spotify Interface">
+              <h3>SPOTIFY</h3>
+              <p>Spotify, built using React, leverages a component-based architecture for a seamless user experience. Tailwind CSS ensures efficient and responsive design styling, while Redux handles state management for consistent and predictable application state. React Router provides smooth navigation for a user-friendly music streaming experience.</p>
+              <div class="project-github-buttons">
+              <button onclick="spotifyGithub()" class="project-button">Github</button>
+              <button class="project-button">Try Me</button>
             </div>
-            <div class="box-container second">
-                <div class="project-image-container" style="background-image: url('images/project2.webp');"></div>
-                <h3>PASSWORD GENERATOR</h3>
-                <p>It is a user-friendly UI interactive password generator built with React and Tailwind that allows users to generate passwords based on their preferences, including numbers or special characters.</p>
-                <!-- <div  class="github-button"><button type="button">GitHub</button></div> -->
+          </div>
+
+            <div class="box-container">
+              <img class="project-image-container" src="images/chat.png" alt="React chat">
+              <h3>REAL-TIME CHAT</h3>
+                <p>It provides a seamless, interactive platform for real-time messaging with a modern, intuitive user interface, allowing users to chat effortlessly across devices. The tech stack includes React for the front end, Firebase for backend services, and Zustand for state management.</p>
+                <div class="project-github-buttons">
+              <button onclick="reactChatGithub()" class="project-button">Github</button>
+              <button class="project-button">Try Me</button>
             </div>
+            </div>
+        </div>
+
+        <div class="project-more-container">
+        <button onclick="moreProjects()">See More</button>
         </div>
 
       <!-- CONTACT CONTAINER -->
