@@ -144,11 +144,10 @@ header {
 .project-container {
   background-color: #e5e5e5;
   display: flex;
-  gap: 50px;
   justify-content:space-evenly;
   flex-wrap: wrap;
-  padding: 2.1rem 0 2rem;
-  margin: 0px 200px;
+  /* padding: 2.1rem 0 2rem; */
+
 }
 .box-container {
   width:320px;
@@ -157,14 +156,12 @@ header {
   border-radius: 8px;
   box-shadow: 1px 1px 20px 6px rgb(0 0 0 / 0.3);
   overflow: hidden;
+  margin-bottom: 50px;
 }
 .box-container:hover {
   transform: scale(1.02);
   transition: 0.1s;
 }
-/* .box-container.common{
-  gap: 50px;
-} */
 .project-image-container {
   max-width: 100%;
   height: auto;
@@ -355,9 +352,9 @@ footer {
   .box-container {
     min-width: 80%;
   }
-  .box-container.first {
+  /* .box-container.first {
     margin-bottom: 5rem;
-  }
+  } */
   .project-image-container {
     background-size: 100% 100%;
   }
